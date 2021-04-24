@@ -54,4 +54,36 @@
     student.courseLoad[0]
     ```
 
-13. 
+13. Arithmetic
+
+    A. `32` is the output because the 3 is a string and the 2 is concatenated to it.
+
+    B. `1` is the output because the 3 is converted to a number, and then 2 is subtracted to get 1.
+
+    C. `3` is the output. The `null` is converted to a 0 and then added to 0, resulting in 3.
+
+    D. `3null` is the output. The `null` is converted to the string "null" and then concatenated after the 3.
+
+    E. `4` is the output. The `true` is converted to a 1 and then added to 3, resulting in 4.
+
+    F. `0` is the output. The `false` is converted to 0 and the `null` is converted to a 0. These are added together to produce 0.
+
+    G. `3undefined` is the output. The `undefined` is converted to the string "undefined" and then concatenated after the 3.
+
+    H. `NaN` is the output. `undefined` is converted to `NaN` (not a number) which means the conversion failed and the operation could not be completed.
+
+14. Comparison
+    
+    A. `true` is the output. The string `'2'` is converted to the number 2 and then 2 is greater than 1, hence the true.
+
+    B. `false` is the output. This is a string comparison, so the strings are compared letter by letter. So the `'2'` in the first string is greater than the `'1'` in the second string lexicographically, hence the comparison is false.
+
+    C. `true` is the output. The string `'2'` is converted to the number 2, so the comparison is true.
+
+    D. `false` is the output. Since we are using strict equality, the equality is checked without type conversion. Since the types are different, this fails.
+
+    E. `false` is the output. The `true` is converted to the number 1, which is not equal to 2.
+
+    F. `true` is the output. The `Boolean` is an explicit boolean conversion. It will convert items to true unless they are one of 6 things that specifically convert to false, and the number 2 is not one of these.
+
+15. The difference with `==` is that `==` performs type conversion before checking for equality, thus allowing for things like `2 == '2'` to return true as the string was converted to a number. However, `===` does not perform type conversion before checking for equality, so the types must match as well in order for the check to evaluate to true.
