@@ -73,7 +73,7 @@
     H. `NaN` is the output. `undefined` is converted to `NaN` (not a number) which means the conversion failed and the operation could not be completed.
 
 14. Comparison
-    
+
     A. `true` is the output. The string `'2'` is converted to the number 2 and then 2 is greater than 1, hence the true.
 
     B. `false` is the output. This is a string comparison, so the strings are compared letter by letter. So the `'2'` in the first string is greater than the `'1'` in the second string lexicographically, hence the comparison is false.
@@ -87,3 +87,7 @@
     F. `true` is the output. The `Boolean` is an explicit boolean conversion. It will convert items to true unless they are one of 6 things that specifically convert to false, and the number 2 is not one of these.
 
 15. The difference with `==` is that `==` performs type conversion before checking for equality, thus allowing for things like `2 == '2'` to return true as the string was converted to a number. However, `===` does not perform type conversion before checking for equality, so the types must match as well in order for the check to evaluate to true.
+16. See [part1b-question16.js](part1b-question16.js).
+17. A new array will be returned that has the contents of the original array, but multiplied by 2. With the given array `[1,2,3]` it will return an array with `[2,4,6]`.
+18. See [part1b-question18.js](part1b-question18.js).
+19. This code prints the numbers 1 4 3 2 in that order, each on their own line. There is a 1 second delay before 2 is printed, and 4 prints before 3 because the timeout does not have to be registered.
